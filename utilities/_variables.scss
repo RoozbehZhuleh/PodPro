@@ -1,0 +1,30 @@
+@use "sass:map";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Square+Peg&display=swap");
+
+$primary-color: #F1F1F1;
+$secondary-color: #000000;
+$third-color: #00E776;
+$fourth-color: #7D7D7D;
+$light-color: #ffffff;
+$dark-color: #070707;
+
+$fc-primary: #000000;
+$fc-secondary: #ffffff;
+$fc-third: #7D7D7D;
+
+$br-s: 0.5rem;
+$br-m: 1rem;
+$br-l: 1.5rem;
+
+$fs-s: 1rem;
+$fs-sm: 1.3rem;
+$fs-m: 1.6rem;
+$fs-ml: 2rem;
+$fs-l: 3rem;
+$fs-xl: 4rem;
+$fs-xxl: 6rem;
+
+$fw-thin: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;

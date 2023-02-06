@@ -1,0 +1,50 @@
+.nav{
+    @include grid(repeat(1, 1fr) , 20% 80%);
+    margin-top:2rem;
+    width: 7vw;
+    height: 90vh;
+    background-color: $light-color;
+    padding: 3rem 0;
+    border-radius: $br-l 0 0 $br-l;
+    margin-right: none;
+
+    &__logo{
+        @include flex(column, flex-start, center);
+
+        i{
+            font-size: $fs-l;
+        }
+
+        &__word{
+            @include flex(row, center, center);
+            font-weight: $fw-bold;
+        }
+
+        &__pod{
+            color: $fc-secondary;
+        }
+    }
+
+    &__list{
+        @include flex(column, flex-start, center);
+
+        &__items{
+            @include flex(column, center, center);
+            gap: 3rem;
+            font-size: $fs-ml;
+            color: $fc-third;
+            
+            &>*{
+                padding: 1rem;
+                transition: all 0.2s ease;
+                cursor: pointer;
+                border-radius: $br-m;
+            }
+
+            &>*:hover{
+            @include btn-hover;
+
+            }
+        }
+    }
+}

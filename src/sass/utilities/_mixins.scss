@@ -1,0 +1,46 @@
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin grid($column, $row) {
+  display: grid;
+  grid-template-columns: $column;
+  grid-template-rows: $row;
+}
+
+@mixin btn {
+  font-family: inherit;
+  padding: 1rem 1.5rem;
+  border-radius: $br-m;
+  outline: 0;
+  border: none;
+  box-shadow: none;
+  transition: all 0.2s ease;
+  background-color: $primary-color;
+  color: $fc-third;
+}
+
+@mixin btn-arrow {
+  font-family: inherit;
+  padding: 1rem 1.5rem;
+  border-radius: $br-m;
+  outline: 0;
+  border: none;
+  box-shadow: none;
+  transition: all 0.2s ease;
+  background-color: $primary-color;
+  color: $fc-primary;
+}
+
+@mixin btn-hover{
+  background-color: $secondary-color;
+  color: $light-color;
+}
+@mixin btn-arrow-hover{
+  background-color: $secondary-color;
+  color: $fc-third;
+}
+

@@ -1,0 +1,84 @@
+// .top{
+//     @include grid(3fr 1fr 1fr, 1fr);
+//     gap: 1rem;
+//     // width: 80vw;
+//     height: 10vh;
+//     margin-top: 2rem;
+
+    .top__searchbar{
+        place-items: center;
+        align-self: center;
+        width: 50%;
+        // margin: 0 0 0 2rem;
+        @include flex(row, center,center);
+        background-color: $light-color;
+        gap: 1rem 0.5rem;
+        border-radius: $br-l;
+        justify-self: center;
+        align-self: flex-start;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-top: 3rem;
+
+        input{
+            border: none;
+            outline: none;
+            background-color:$light-color;
+            padding: 1rem;
+        }
+        i{
+            background: transparent;
+        }
+    }
+
+    .top__icons{
+        // padding:0 4rem 0 0;
+        align-self: center;
+        justify-self: flex-end;
+        @include flex(row, center, center);
+        gap: 2rem;
+        align-self: flex-start;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-top: 3rem;
+
+
+        i{
+            font-size: $fs-m;
+            color: $fc-primary;
+            padding: 1.5rem;
+            background-color: $light-color;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: $br-l;
+            cursor: pointer;
+            transition: all 0.2s ease-in;
+
+            &:hover{
+                @include btn-hover;
+            }
+        }
+
+    }
+
+    .top__profile{
+        @include flex(row, center, center);
+        align-self: flex-start;
+        gap: 1rem;
+        grid-column: 3/4;
+        grid-row: 1/2;
+        align-self: flex-start;
+        justify-self: flex-start;
+        margin-top: 3rem;
+
+        h3{
+            font-size: $fs-m;
+        }
+        p{
+            font-size: $fs-sm;
+        }
+
+        img{
+            width: 5rem;
+        }
+    }
+// }
